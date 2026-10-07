@@ -326,43 +326,15 @@ p {
   margin-top: 30px;
 }
 
-.avatar-head {
-  position: absolute;
-  top: 38px;
-  width: 160px;
-  height: 160px;
+.profile-photo {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 340px);
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: 50%;
-  background: linear-gradient(135deg, #cfe4ff 0%, #7db1e9 28%, #2f3d55 100%);
-  box-shadow: inset 0 18px 24px rgba(255, 255, 255, 0.22), inset 0 -12px 22px rgba(4, 9, 15, 0.38);
-}
-
-.avatar-head::before,
-.avatar-head::after {
-  content: "";
-  position: absolute;
-  top: 70px;
-  width: 10px;
-  height: 10px;
-  background: rgba(7, 16, 25, 0.9);
-  border-radius: 50%;
-}
-
-.avatar-head::before {
-  left: 44px;
-}
-
-.avatar-head::after {
-  right: 44px;
-}
-
-.avatar-body {
-  position: absolute;
-  bottom: 38px;
-  width: 230px;
-  height: 250px;
-  border-radius: 36% 36% 18% 18%;
-  background: linear-gradient(180deg, #eaf3ff 0%, #a2b8d7 20%, #23364d 56%, #0d1625 100%);
-  box-shadow: inset 0 18px 26px rgba(255, 255, 255, 0.18), inset 0 -10px 24px rgba(5, 10, 16, 0.46);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
 }
 
 .mini-stats {
